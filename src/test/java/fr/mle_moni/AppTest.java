@@ -1,18 +1,22 @@
 package fr.mle_moni;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+import fr.mle_moni.helpers.NameGenerator;
+
 public class AppTest {
-    /**
-     * Rigorous Test :-)
-     */
+
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void randomVilainsNames() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(NameGenerator.generateVilainName());
+        }
+    }
+
+    @Test
+    public void randomWeaponsNames() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(NameGenerator.generateWeaponName());
+        }
     }
 }
